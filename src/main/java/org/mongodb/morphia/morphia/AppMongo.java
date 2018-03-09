@@ -13,7 +13,7 @@ import domaine.Person;
  * Hello world!
  *
  */
-public class App {
+public class AppMongo {
 
 	public static void main(String[] args) {
 
@@ -25,7 +25,7 @@ public class App {
 		Person person = new Person();
 		person.setName("Tintin");
 		
-		Address address = new Address();
+	Address address = new Address();
 		address.setStreet("123 Some street");
 		address.setCity("Some city");
 		address.setPostCode("123 456");
