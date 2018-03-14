@@ -16,6 +16,7 @@ import domaine.Person;
 public class AppMongo {
 
 	public static void main(String[] args) {
+		// mise en place de morphia et creation d'un client mongodb 
 
 		Morphia morphia = new Morphia();
 		MongoClient mongo = new MongoClient();
