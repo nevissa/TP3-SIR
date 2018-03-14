@@ -1,0 +1,47 @@
+
+Les objectifs de ce travail pratique sont les suivants :
+Comprendre les bénéfices et les limites des bases nosql
+Comprendre les différents types de bases nosql
+Réaliser une application en utilisant une API comme Morphia proche de JPA en se plaçant dans un cadre classique de développement au dessus d’une base orientée document comme Mongo.
+Comparer avec une base de données clé valeur haute performance comme Redis
+
+------------la première partie du tp------------------------------------
+
+cette partie consiste en la mise en place d'une base de données nosql(mongodb) en utilisant Morphia pour la persistance de données
+
+-après avoir vous connectez au serveur mongodb executez le code java de la classe AppMongo du package org.mongodb.morphia.morphia
+pour voir le comportement des bases de données orientés document
+
+
+Questions: Quelles sont les limites d’une base données orientées document ? (à répondre dans le compte rendu de TP (le readme)
+
+Le prix à payer pour la flexibilité est la non existence de clefs étrangères. Cela nous oblige à contrôler l'intégrité des données dans la couche application.
+À cause de la dénormalisation, on est exposé à la redondance, si on prend notre exemple sur les articles , nous serons
+obligé d'enregistrer une personne dans chaque article qu'elle achète.
+
+
+------------la deuxième partie du tp------------------------------------
+
+
+cette partie consiste en la mise en place d'une base de données nosql(Redis) 
+
+-après avoir vous connectez au serveur executez le code java de la classe AppRedis du package org.redis.example
+pour voir le comportement des bases de données clé-valeur
+
+Questions: Quelles sont les types de données stockés dans Redis, que peut on faire comme types de requêtes ?
+
+Redis est particulièrement utile pour manipuler des types de données simples tels que des chaînes de caractères,
+ des tableaux associatifs, listes, ensembles et ensembles ordonnés. La force caractéristique de Redis consiste à 
+stocker les données en mémoire vive (RAM).
+
+Les requetes possibles: ajouter une donnée avec un set, recuperer une donnée avec un get, ajouter un hash,verifier l'existance d'une clé
+on peut egalement faire des requetes sur les ensembles(sets): union, interception, difference creation d'un ensemble et recuperation
+de ses elements.
+
+
+
+
+
+
+
+
